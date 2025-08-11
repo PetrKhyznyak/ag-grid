@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+#root {
+  max-width: 1280px;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.ag-header-cell,
+.ag-header-group-cell{
+  text-wrap: wrap;
+  border-right: 1px solid #ccc !important;
+}
+.ag-column-last {
+  border-right: none !important;
+}
+
+
+.ag-header-cell-label  {
+  justify-content: center;
+}
+
+.ag-header-cell-comp-wrapper {
+  justify-content: center;
+}
+
+/* Убрать псевдоэлемент after у последних заголовков */
+.ag-theme-alpine .ag-header-cell:last-child .ag-header-cell-resize::after,
+.ag-theme-alpine .ag-header-group-cell:last-child .ag-header-cell-resize::after {
+  border: none !important;
+}
+
+/* Если нужно убрать у всех крайних правых элементов в каждой строке заголовков */
+.ag-theme-alpine .ag-header-row .ag-header-cell:last-child .ag-header-cell-resize::after,
+.ag-theme-alpine .ag-header-row .ag-header-group-cell:last-child .ag-header-cell-resize::after {
+  border: none !important;
+}
+
+.ag-horizontal-left-spacer {
+  display: none !important;
+}

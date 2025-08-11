@@ -1,0 +1,410 @@
+[
+  {
+    "id": 1,
+    "data": [
+      {
+        "fieldName": "Яблунівське",
+        "wellName": "Св-101",
+        "fund": 12,
+        "h8": {
+          "pressure": 25,
+          "temperature": 25
+        },
+        "h10": {
+          "pressure": 25,
+          "temperature": 25
+        },
+        "h12": {
+          "pressure": 25,
+          "temperature": 25
+        },
+        "h14": {
+          "pressure": 25,
+          "temperature": 25
+        },
+        "h16": {
+          "pressure": 25,
+          "temperature": 25
+        },
+        "h18": {
+          "pressure": 25,
+          "temperature": 25
+        },
+        "h20": {
+          "pressure": 25,
+          "temperature": 25
+        },
+        "h22": {
+          "pressure": 25,
+          "temperature": 25
+        },
+        "h0": {
+          "pressure": 25,
+          "temperature": 25
+        },
+        "h2": {
+          "pressure": 25,
+          "temperature": 25
+        },
+        "h4": {
+          "pressure": 25,
+          "temperature": 25
+        },
+        "h6": {
+          "pressure": 25,
+          "temperature": 25
+        }
+      },
+      {
+        "fieldName": "Шебелинське",
+        "wellName": "Св-201",
+        "fund": 8,
+        "h8": {
+          "pressure": 25,
+          "temperature": 18
+        },
+        "h10": {
+          "pressure": 26,
+          "temperature": 20
+        },
+        "h12": {
+          "pressure": 27,
+          "temperature": 23
+        },
+        "h14": {
+          "pressure": 28,
+          "temperature": 26
+        },
+        "h16": {
+          "pressure": 28,
+          "temperature": 27
+        },
+        "h18": {
+          "pressure": 27,
+          "temperature": 25
+        },
+        "h20": {
+          "pressure": 26,
+          "temperature": 22
+        },
+        "h22": {
+          "pressure": 26,
+          "temperature": 20
+        },
+        "h0": {
+          "pressure": 25,
+          "temperature": 18
+        },
+        "h2": {
+          "pressure": 25,
+          "temperature": 17
+        },
+        "h4": {
+          "pressure": 24,
+          "temperature": 16
+        },
+        "h6": {
+          "pressure": 24,
+          "temperature": 15
+        }
+      },
+      {
+        "fieldName": "Рибальське",
+        "wellName": "Св-501",
+        "fund": 5,
+        "h8": {
+          "pressure": 30,
+          "temperature": 22
+        },
+        "h10": {
+          "pressure": 32,
+          "temperature": 23
+        },
+        "h12": {
+          "pressure": 33,
+          "temperature": 25
+        },
+        "h14": {
+          "pressure": 31,
+          "temperature": 26
+        },
+        "h16": {
+          "pressure": 30,
+          "temperature": 26
+        },
+        "h18": {
+          "pressure": 29,
+          "temperature": 25
+        },
+        "h20": {
+          "pressure": 28,
+          "temperature": 24
+        },
+        "h22": {
+          "pressure": 29,
+          "temperature": 23
+        },
+        "h0": {
+          "pressure": 31,
+          "temperature": 22
+        },
+        "h2": {
+          "pressure": 32,
+          "temperature": 21
+        },
+        "h4": {
+          "pressure": 30,
+          "temperature": 20
+        },
+        "h6": {
+          "pressure": 29,
+          "temperature": 20
+        }
+      },
+      {
+        "fieldName": "Опішнянське",
+        "wellName": "Св-302",
+        "fund": 6,
+        "h8": {
+          "pressure": 26,
+          "temperature": 24
+        },
+        "h10": {
+          "pressure": 27,
+          "temperature": 27
+        },
+        "h12": {
+          "pressure": 28,
+          "temperature": 31
+        },
+        "h14": {
+          "pressure": 28,
+          "temperature": 34
+        },
+        "h16": {
+          "pressure": 27,
+          "temperature": 33
+        },
+        "h18": {
+          "pressure": 26,
+          "temperature": 29
+        },
+        "h20": {
+          "pressure": 25,
+          "temperature": 26
+        },
+        "h22": {
+          "pressure": 25,
+          "temperature": 23
+        },
+        "h0": {
+          "pressure": 24,
+          "temperature": 21
+        },
+        "h2": {
+          "pressure": 24,
+          "temperature": 19
+        },
+        "h4": {
+          "pressure": 23,
+          "temperature": 18
+        },
+        "h6": {
+          "pressure": 23,
+          "temperature": 17
+        }
+      },
+      {
+        "fieldName": "Опішнянське",
+        "wellName": "Св-303",
+        "fund": 8,
+        "h8": {
+          "pressure": 29,
+          "temperature": 15
+        },
+        "h10": {
+          "pressure": 29,
+          "temperature": 17
+        },
+        "h12": {
+          "pressure": 29,
+          "temperature": 20
+        },
+        "h14": {
+          "pressure": 29,
+          "temperature": 22
+        },
+        "h16": {
+          "pressure": 29,
+          "temperature": 21
+        },
+        "h18": {
+          "pressure": 29,
+          "temperature": 19
+        },
+        "h20": {
+          "pressure": 29,
+          "temperature": 18
+        },
+        "h22": {
+          "pressure": 29,
+          "temperature": 16
+        },
+        "h0": {
+          "pressure": 29,
+          "temperature": 14
+        },
+        "h2": {
+          "pressure": 29,
+          "temperature": 13
+        },
+        "h4": {
+          "pressure": 29,
+          "temperature": 12
+        },
+        "h6": {
+          "pressure": 29,
+          "temperature": 11
+        }
+      },
+      {
+        "fieldName": "Котелевське",
+        "wellName": "Св-401",
+        "fund": 14,
+        "h8": {
+          "pressure": 32,
+          "temperature": 20
+        },
+        "h10": {
+          "pressure": 34,
+          "temperature": 22
+        },
+        "h12": {
+          "pressure": 33,
+          "temperature": 24
+        },
+        "h14": {
+          "pressure": 35,
+          "temperature": 25
+        },
+        "h16": {
+          "pressure": 34,
+          "temperature": 24
+        },
+        "h18": {
+          "pressure": 33,
+          "temperature": 23
+        },
+        "h20": {
+          "pressure": 31,
+          "temperature": 21
+        },
+        "h22": {
+          "pressure": 30,
+          "temperature": 20
+        },
+        "h0": {
+          "pressure": 31,
+          "temperature": 19
+        },
+        "h2": {
+          "pressure": 33,
+          "temperature": 18
+        },
+        "h4": {
+          "pressure": 32,
+          "temperature": 17
+        },
+        "h6": {
+          "pressure": 31,
+          "temperature": 16
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "data": [
+      {
+        "fieldName": "Яблунівське",
+        "wellName": "Св-101",
+        "fund": 12,
+        "techModeAllowed": 250,
+        "techModeOptimal": 220,
+        "actualGasRate": 230
+      },
+      {
+        "fieldName": "Шебелинське",
+        "wellName": "Св-201",
+        "fund": 8,
+        "techModeAllowed": 150,
+        "techModeOptimal": 130,
+        "actualGasRate": 125
+      },
+      {
+        "fieldName": "Рибальське",
+        "wellName": "Св-501",
+        "fund": 5,
+        "techModeAllowed": 90,
+        "techModeOptimal": 70,
+        "actualGasRate": 65
+      },
+      {
+        "fieldName": "Опішнянське",
+        "wellName": "Св-302",
+        "fund": 6,
+        "techModeAllowed": 110,
+        "techModeOptimal": 90,
+        "actualGasRate": 85
+      },
+      {
+        "fieldName": "Опішнянське",
+        "wellName": "Св-303",
+        "fund": 8,
+        "techModeAllowed": 130,
+        "techModeOptimal": 110,
+        "actualGasRate": 105
+      },
+      {
+        "fieldName": "Котелевське",
+        "wellName": "Св-401",
+        "fund": 14,
+        "techModeAllowed": 300,
+        "techModeOptimal": 270,
+        "actualGasRate": 290
+      },
+      {
+        "fieldName": "Котелевське",
+        "wellName": "Св-402",
+        "fund": 12,
+        "techModeAllowed": 280,
+        "techModeOptimal": 250,
+        "actualGasRate": 260
+      },
+      {
+        "fieldName": "Котелевське",
+        "wellName": "Св-403",
+        "fund": 10,
+        "techModeAllowed": 260,
+        "techModeOptimal": 230,
+        "actualGasRate": 240
+      },
+      {
+        "fieldName": "Рибальське",
+        "wellName": "Св-502",
+        "fund": 6,
+        "techModeAllowed": 100,
+        "techModeOptimal": 80,
+        "actualGasRate": 75
+      },
+      {
+        "fieldName": "Рибальське",
+        "wellName": "Св-503",
+        "fund": 7,
+        "techModeAllowed": 110,
+        "techModeOptimal": 90,
+        "actualGasRate": 85
+      }
+    ]
+  }
+]

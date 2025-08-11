@@ -1,0 +1,444 @@
+[
+  {
+    "id": 1,
+    "headers": [
+      {
+        "headerName": "Родовище",
+        "field": "fieldName",
+        "pinned": "left",
+        "editable": false
+      },
+      {
+        "headerName": "Св-на",
+        "field": "wellName",
+        "pinned": "left",
+        "editable": false
+      },
+      {
+        "headerName": "Фонд",
+        "field": "fund",
+        "pinned": "left",
+        "editable": false
+      },
+      {
+        "headerName": "8:00",
+        "children": [
+          {
+            "headerName": "Р, атм",
+            "field": "h8.pressure",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          },
+          {
+            "headerName": "t, C°",
+            "field": "h8.temperature",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          }
+        ]
+      },
+      {
+        "headerName": "10:00",
+        "children": [
+          {
+            "headerName": "Р, атм",
+            "field": "h10.pressure",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          },
+          {
+            "headerName": "t, C°",
+            "field": "h10.temperature",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          }
+        ]
+      },
+      {
+        "headerName": "12:00",
+        "children": [
+          {
+            "headerName": "Р, атм",
+            "field": "h12.pressure",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          },
+          {
+            "headerName": "t, C°",
+            "field": "h12.temperature",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          }
+        ]
+      },
+      {
+        "headerName": "14:00",
+        "children": [
+          {
+            "headerName": "Р, атм",
+            "field": "h14.pressure",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          },
+          {
+            "headerName": "t, C°",
+            "field": "h14.temperature",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          }
+        ]
+      },
+      {
+        "headerName": "16:00",
+        "children": [
+          {
+            "headerName": "Р, атм",
+            "field": "h16.pressure",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          },
+          {
+            "headerName": "t, C°",
+            "field": "h16.temperature",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          }
+        ]
+      },
+      {
+        "headerName": "18:00",
+        "children": [
+          {
+            "headerName": "Р, атм",
+            "field": "h18.pressure",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          },
+          {
+            "headerName": "t, C°",
+            "field": "h18.temperature",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          }
+        ]
+      },
+      {
+        "headerName": "20:00",
+        "children": [
+          {
+            "headerName": "Р, атм",
+            "field": "h20.pressure",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          },
+          {
+            "headerName": "t, C°",
+            "field": "h20.temperature",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          }
+        ]
+      },
+      {
+        "headerName": "22:00",
+        "children": [
+          {
+            "headerName": "Р, атм",
+            "field": "h22.pressure",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          },
+          {
+            "headerName": "t, C°",
+            "field": "h22.temperature",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          }
+        ]
+      },
+      {
+        "headerName": "0:00",
+        "children": [
+          {
+            "headerName": "Р, атм",
+            "field": "h0.pressure",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          },
+          {
+            "headerName": "t, C°",
+            "field": "h0.temperature",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          }
+        ]
+      },
+      {
+        "headerName": "2:00",
+        "children": [
+          {
+            "headerName": "Р, атм",
+            "field": "h2.pressure",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          },
+          {
+            "headerName": "t, C°",
+            "field": "h2.temperature",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          }
+        ]
+      },
+      {
+        "headerName": "4:00",
+        "children": [
+          {
+            "headerName": "Р, атм",
+            "field": "h4.pressure",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          },
+          {
+            "headerName": "t, C°",
+            "field": "h4.temperature",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          }
+        ]
+      },
+      {
+        "headerName": "6:00",
+        "children": [
+          {
+            "headerName": "Р, атм",
+            "field": "h6.pressure",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          },
+          {
+            "headerName": "t, C°",
+            "field": "h6.temperature",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "headers": [
+      {
+        "headerName": "Родовище",
+        "field": "fieldName",
+        "editable": false
+      },
+      {
+        "headerName": "Св-на",
+        "field": "wellName",
+        "editable": false
+      },
+      {
+        "headerName": "Фонд",
+        "field": "fund",
+        "editable": false
+      },
+      {
+        "headerName": "Відбір газу по технологічному режиму, т.м3/добу",
+        "children": [
+          {
+            "headerName": "Допустимий",
+            "field": "techModeAllowed",
+            "editable": false
+          },
+          {
+            "headerName": "Оптимальний",
+            "field": "techModeOptimal",
+            "editable": false
+          }
+        ]
+      },
+      {
+        "headerName": "Фактичний відбір газу, тис.м3/добу",
+        "field": "actualGasRate",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\\\d+\\\\.?\\\\d*|\\\\.\\\\d+)$/",
+          "inputType": "number"
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "headers": [
+      {
+        "headerName": "Родовище",
+        "field": "fieldName",
+        "editable": false
+      },
+      {
+        "headerName": "Св-на",
+        "field": "wellName",
+        "editable": false
+      },
+      {
+        "headerName": "Фонд",
+        "field": "fund",
+        "editable": false
+      },
+      {
+        "headerName": "Горизонт",
+        "field": "horizon"
+      },
+      {
+        "headerName": "Pтр. тиск, атм",
+        "field": "pipePressure",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\\\d+\\\\.?\\\\d*|\\\\.\\\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName":  "P затр. тиск, атм",
+        "field": "afterPipePressure",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\\\d+\\\\.?\\\\d*|\\\\.\\\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "Т устя, C°",
+        "field": "estuaryTemperature",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\\\d+\\\\.?\\\\d*|\\\\.\\\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "Øуст. мм",
+        "field": "estuaryDiameter",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\\\d+\\\\.?\\\\d*|\\\\.\\\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "Рмк. 1/2/3 атм.",
+        "field": "pMk",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\\\d+\\\\.?\\\\d*|\\\\.\\\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "Pвх, атм.",
+        "field": "inletPressure",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\\\d+\\\\.?\\\\d*|\\\\.\\\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "tвх, C°",
+        "field": "inletTemperature",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\\\d+\\\\.?\\\\d*|\\\\.\\\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "Ø ввн. мм",
+        "field": "innerDiameter",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\\\d+\\\\.?\\\\d*|\\\\.\\\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+
+      }
+    ]
+  }
+]
