@@ -4,7 +4,6 @@
     "data": [
       {
         "fieldName": "Яблунівське",
-        "wellName": "Св-101",
         "fund": 12,
         "h8": {
           "pressure": 25,
@@ -406,5 +405,104 @@
         "actualGasRate": 85
       }
     ]
+  },
+  {
+    "id": 3,
+    "data": [
+      {
+        "wellName": "Св-101",
+        "horizon": "123",
+        "pipePressure": 20,
+        "afterPipePressure": 18,
+        "estuaryTemperature": 15,
+        "estuaryDiameter": 100,
+        "pMk": 5,
+        "inletPressure": 22,
+        "inletTemperature": 17,
+        "innerDiameter": 80
+      },
+      {
+        "wellName": "Св-102",
+        "horizon": "123",
+        "pipePressure": 20,
+        "afterPipePressure": 18,
+        "estuaryTemperature": 15,
+        "estuaryDiameter": 100,
+        "pMk": 5,
+        "inletPressure": 22,
+        "inletTemperature": 17,
+        "innerDiameter": 80
+      },
+      {
+        "wellName": "Св-103",
+        "horizon": "123",
+        "pipePressure": 25,
+        "afterPipePressure": 21,
+        "estuaryTemperature": 18,
+        "estuaryDiameter": 110,
+        "pMk": 6,
+        "inletPressure": 24,
+        "inletTemperature": 19,
+        "innerDiameter": 85
+      },
+      {
+        "wellName": "Св-104",
+        "horizon": "123",
+        "pipePressure": 18,
+        "afterPipePressure": 16,
+        "estuaryTemperature": 14,
+        "estuaryDiameter": 95,
+        "pMk": 4,
+        "inletPressure": 20,
+        "inletTemperature": 15,
+        "innerDiameter": 78
+      },
+      {
+        "wellName": "Св-105",
+        "horizon": "123",
+        "pipePressure": 28,
+        "afterPipePressure": 23,
+        "estuaryTemperature": 20,
+        "estuaryDiameter": 105,
+        "pMk": 7,
+        "inletPressure": 26,
+        "inletTemperature": 21,
+        "innerDiameter": 82
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "data": [
+      {
+        "wellName": "Св-101",
+        "condensatePlannedProduction": null,
+        "condensateProduction": 5,
+        "oilPlannedProduction": 10,
+        "oilProduction": 15
+      },
+      {
+        "wellName": "Св-102",
+        "condensatePlannedProduction": 4,
+        "condensateProduction": 8,
+        "oilPlannedProduction": 10,
+        "oilProduction": 11
+      },
+      {
+        "wellName": "Св-103",
+        "condensatePlannedProduction": 7,
+        "condensateProduction": 2,
+        "oilPlannedProduction": 5,
+        "oilProduction": 7
+      },
+      {
+        "wellName": "Св-104",
+        "condensatePlannedProduction": null,
+        "condensateProduction": null,
+        "oilPlannedProduction": 6,
+        "oilProduction": 2
+      }
+    ]
+
   }
 ]

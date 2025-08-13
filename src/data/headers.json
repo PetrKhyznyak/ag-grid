@@ -1,6 +1,9 @@
 [
   {
     "id": 1,
+    "autoSize": "fitCellContents",
+    "minWidth": 80,
+    "maxWidth": 100,
     "headers": [
       {
         "headerName": "Родовище",
@@ -300,6 +303,8 @@
   },
   {
     "id": 2,
+    "autoSize": "fitGridWidth",
+    "minWidth": "50",
     "headers": [
       {
         "headerName": "Родовище",
@@ -344,20 +349,13 @@
   },
   {
     "id": 3,
+    "autoSize": "fitCellContents",
+    "minWidth": 80,
+    "maxWidth": 100,
     "headers": [
-      {
-        "headerName": "Родовище",
-        "field": "fieldName",
-        "editable": false
-      },
       {
         "headerName": "Св-на",
         "field": "wellName",
-        "editable": false
-      },
-      {
-        "headerName": "Фонд",
-        "field": "fund",
         "editable": false
       },
       {
@@ -374,7 +372,7 @@
         }
       },
       {
-        "headerName":  "P затр. тиск, атм",
+        "headerName": "P затр. тиск, атм",
         "field": "afterPipePressure",
         "editable": true,
         "cellEditorParams": {
@@ -435,9 +433,79 @@
           "pattern": "/^[+-]?(\\\\d+\\\\.?\\\\d*|\\\\.\\\\d+)$/",
           "inputType": "number"
         }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "autoSize": "fitGridWidth",
+    "minWidth": "50",
+    "headers": [
+      {
+        "field": "wellName",
+        "headerName": "Родовище"
       },
       {
-
+        "headerName": "Видобуток конденсату, т/добу",
+        "children": [
+          {
+            "field": "condensatePlannedProduction",
+            "headerName": "План",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          },
+          {
+            "field": "condensateProduction",
+            "headerName": "Факт",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          }
+        ]
+      },
+      {
+        "headerName": "Видобуток нафти, т/добу",
+        "children": [
+          {
+            "field": "oilPlannedProduction",
+            "headerName": "План",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          },
+          {
+            "field": "oilProduction",
+            "headerName": "Факт",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "autoSize": "fitCellContents",
+    "minWidth": 50,
+    "headers": [
+      {
+        "field": "condensatePlannedProduction",
+        "headerName": "План",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
       }
     ]
   }

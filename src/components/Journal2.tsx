@@ -1,6 +1,9 @@
 import {type FC, type JSX, useState} from "react"
-import {AllCommunityModule, ModuleRegistry} from 'ag-grid-community';
-import type {ColDef, ColGroupDef} from 'ag-grid-community';
+import {AllCommunityModule, type CellValueChangedEvent, ModuleRegistry} from 'ag-grid-community';
+import type {
+    ColDef,
+    ColGroupDef,
+} from 'ag-grid-community';
 import {AgGridReact} from 'ag-grid-react';
 import dataList from "../data/mock-data.json";
 import headers from "../data/headers.json"
@@ -14,23 +17,46 @@ type RowData = {
     } | CellValue | undefined;
 };
 
+type AutoSize =
+    | { type: "fitGridWidth" }
+    | { type: "fitProvidedWidth", width: number }
+    | { type: "fitCellContents" }
 
-const Journal: FC = () => {
-    const data = dataList.find(item => item.id === 2);
-    const header = headers.find(item => item.id === 2);
-    const [rowData, setRowData] = useState<RowData[] | undefined>(data?.data);
+
+
+
+const Journal2: FC = () => {
+    const data = dataList.find(item => item.id === 1);
+    const header = headers.find(item => item.id === 1);
+    const [rowData, setRowData] = useState<RowData[]>(data?.data ?? []);
 
 
     const columnDefs = (header?.headers ?? []) as (ColDef<RowData> | ColGroupDef<RowData>)[];
 
 
-    const handelCellValueChange = (params: any) => {
-        const updatedData = [...rowData];
-        updatedData[params.node.rowIndex] = params.data;
-        setRowData(updatedData);
+    const handelCellValueChange = (params: CellValueChangedEvent<RowData>) => {
+        if(params.node.rowIndex != null) {
+            const updatedData = [...rowData];
+            updatedData[params.node.rowIndex] = params.data;
+            setRowData(updatedData);
+        }
+    }
+    const isValidAutoSize = (autoSize: string | undefined): autoSize is "fitGridWidth" | "fitProvidedWidth" | "fitCellContents" => {
+        return ["fitGridWidth", "fitProvidedWidth", "fitCellContents"].includes(autoSize ?? "");
+    }
+
+    const getAutoSizeStrategy = (autoSize: string | undefined): AutoSize => {
+        if (!isValidAutoSize(autoSize)) {
+            return { type: 'fitGridWidth' };
+        }
+        if (autoSize === "fitProvidedWidth") {
+            return { type: 'fitProvidedWidth', width: header?.width ? Number(header.width) : 100 };
+        }
+        return { type: autoSize };
     }
 
     console.log(rowData);
+    console.log(columnDefs);
 
     return (
         <div className="ag-theme-alpine" style={{height: '100%', width: "100%"}}>
@@ -38,16 +64,16 @@ const Journal: FC = () => {
                 rowData={rowData}
                 columnDefs={columnDefs}
                 onCellValueChanged={handelCellValueChange}
+                autoSizeStrategy={getAutoSizeStrategy(header?.autoSize)}
                 suppressMovableColumns={true}
                 defaultColDef={{
                     resizable: false,
-                    minWidth: 80,
-                    maxWidth: 100
+                    minWidth: header?.minWidth ? Number(header?.minWidth) : 50,
+                    maxWidth: header?.maxWidth
                 }}
-
             />
         </div>
     )
 }
 
-export default Journal;
+export default Journal2;
