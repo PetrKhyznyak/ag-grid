@@ -4,6 +4,7 @@
     "data": [
       {
         "fieldName": "Яблунівське",
+        "wellName": "Св-200",
         "fund": 12,
         "h8": {
           "pressure": 25,

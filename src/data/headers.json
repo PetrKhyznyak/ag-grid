@@ -1,16 +1,10 @@
 [
   {
     "id": 1,
-    "autoSize": "fitCellContents",
     "minWidth": 80,
     "maxWidth": 100,
     "headers": [
-      {
-        "headerName": "Родовище",
-        "field": "fieldName",
-        "pinned": "left",
-        "editable": false
-      },
+
       {
         "headerName": "Св-на",
         "field": "wellName",
@@ -298,6 +292,12 @@
             }
           }
         ]
+      },
+      {
+        "headerName": "",
+        "type": "spacer",
+        "maxWidth": 160,
+        "resizable": false
       }
     ]
   },
@@ -499,13 +499,143 @@
     "minWidth": 50,
     "headers": [
       {
-        "field": "condensatePlannedProduction",
-        "headerName": "План",
+        "headerName": "Св-на",
+        "field": "wellName",
+        "pinned": "left",
+        "editable": false
+      },
+      {
+        "headerName": "Фонд",
+        "field": "fund",
+        "pinned": "left",
+        "editable": false
+      },
+      {
+        "field": "gasFilterCoeff",
+        "headerName": "ГКФ, г/м³",
         "editable": true,
         "cellEditorParams": {
           "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
           "inputType": "number"
         }
+      },
+      {
+        "field": "waterProduction",
+        "headerName": "Видобуток  води м³/д",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "field": "gasVolumeFraction",
+        "headerName": "ГВФ, см³/м³",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "field": "ironIonContent",
+        "headerName": "Вміст іонів заліза",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "field": "waterSamplingLocations ",
+        "headerName": "Місця відбору проб супутньо-пластової води на іони заліза (Fe2+, Fe3+)",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "field": "injectionMethod_solventType",
+        "headerName": "Спосіб нагнітання/вид розчинника",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "field": "inhibitSolution",
+        "headerName": "Розчин інгібітування,%",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "field": "corrosionInhibitorName",
+        "headerName": "Назва інгібітору корозії",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "field": "corrosionInhibitorFlow",
+        "headerName": "Витрата інгібітору корозії,  м³/кг.",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "Рідкий ПАР",
+        "children": [
+          {
+            "field": "liquidVaporName",
+            "headerName": "Назва",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "^[A-Za-zА-ЩЬЮЯЇІЄҐа-щьюяїієґ\\s]+$",
+              "inputType": "string"
+            }
+          },
+          {
+            "field": "liquidVaporAmount",
+            "headerName": "Кіл.-сть, кг.",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          }
+        ]
+      },
+      {
+        "headerName": "Твердий ПАР",
+        "children": [
+          {
+            "field": "solidVaporName",
+            "headerName": "Назва",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "^[A-Za-zА-ЩЬЮЯЇІЄҐа-щьюяїієґ\\s]+$",
+              "inputType": "string"
+            }
+          },
+          {
+            "field": "solidVaporAmount",
+            "headerName": "Кіл.-сть, кг.",
+            "editable": true,
+            "cellEditorParams": {
+              "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+              "inputType": "number"
+            }
+          }
+        ]
       }
     ]
   }

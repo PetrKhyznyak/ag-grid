@@ -7,6 +7,7 @@ import type {
 import {AgGridReact} from 'ag-grid-react';
 import dataList from "../data/mock-data.json";
 import headers from "../data/headers.json"
+import {_logIfDebug} from "ag-grid-community/dist/types/src/utils/function";
 
 ModuleRegistry.registerModules([AllCommunityModule]);
 
@@ -31,8 +32,20 @@ const Journal2: FC = () => {
     const [rowData, setRowData] = useState<RowData[]>(data?.data ?? []);
 
 
-    const columnDefs = (header?.headers ?? []) as (ColDef<RowData> | ColGroupDef<RowData>)[];
+    let columnDefs = (header?.headers ?? []) as (ColDef<RowData> | ColGroupDef<RowData>)[];
 
+    // Добавляем spacer в рантайме
+    columnDefs = columnDefs.map(col => {
+        // Только для ColDef, у ColGroupDef нет 'field'
+        if ((col as ColDef<RowData>).type === 'spacer') {
+            console.log(1)
+            return {
+                ...col,
+                valueGetter: () => '',
+            } as ColDef<RowData>;
+        }
+        return col;
+    });
 
     const handelCellValueChange = (params: CellValueChangedEvent<RowData>) => {
         if(params.node.rowIndex != null) {
@@ -64,8 +77,12 @@ const Journal2: FC = () => {
                 rowData={rowData}
                 columnDefs={columnDefs}
                 onCellValueChanged={handelCellValueChange}
-                autoSizeStrategy={getAutoSizeStrategy(header?.autoSize)}
-                suppressMovableColumns={true}
+                onGridReady={(params) => {
+                    params.api.sizeColumnsToFit();
+                }}
+                autoSizeStrategy={{
+                    type: "fitGridWidth",
+                }}
                 defaultColDef={{
                     resizable: false,
                     minWidth: header?.minWidth ? Number(header?.minWidth) : 50,
