@@ -1,10 +1,55 @@
 [
   {
     "id": 1,
+    "autoSize": "fitGridWidth",
+    "minWidth": "50",
+    "headers": [
+      {
+        "headerName": "Родовище",
+        "field": "fieldName",
+        "editable": false
+      },
+      {
+        "headerName": "Св-на",
+        "field": "wellName",
+        "editable": false
+      },
+      {
+        "headerName": "Фонд",
+        "field": "fund",
+        "editable": false
+      },
+      {
+        "headerName": "Відбір газу по технологічному режиму, т.м3/добу",
+        "children": [
+          {
+            "headerName": "Допустимий",
+            "field": "techModeAllowed",
+            "editable": false
+          },
+          {
+            "headerName": "Оптимальний",
+            "field": "techModeOptimal",
+            "editable": false
+          }
+        ]
+      },
+      {
+        "headerName": "Фактичний відбір газу, тис.м3/добу",
+        "field": "actualGasRate",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\\\d+\\\\.?\\\\d*|\\\\.\\\\d+)$/",
+          "inputType": "number"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
     "minWidth": 80,
     "maxWidth": 100,
     "headers": [
-
       {
         "headerName": "Св-на",
         "field": "wellName",
@@ -302,52 +347,6 @@
     ]
   },
   {
-    "id": 2,
-    "autoSize": "fitGridWidth",
-    "minWidth": "50",
-    "headers": [
-      {
-        "headerName": "Родовище",
-        "field": "fieldName",
-        "editable": false
-      },
-      {
-        "headerName": "Св-на",
-        "field": "wellName",
-        "editable": false
-      },
-      {
-        "headerName": "Фонд",
-        "field": "fund",
-        "editable": false
-      },
-      {
-        "headerName": "Відбір газу по технологічному режиму, т.м3/добу",
-        "children": [
-          {
-            "headerName": "Допустимий",
-            "field": "techModeAllowed",
-            "editable": false
-          },
-          {
-            "headerName": "Оптимальний",
-            "field": "techModeOptimal",
-            "editable": false
-          }
-        ]
-      },
-      {
-        "headerName": "Фактичний відбір газу, тис.м3/добу",
-        "field": "actualGasRate",
-        "editable": true,
-        "cellEditorParams": {
-          "pattern": "/^[+-]?(\\\\d+\\\\.?\\\\d*|\\\\.\\\\d+)$/",
-          "inputType": "number"
-        }
-      }
-    ]
-  },
-  {
     "id": 3,
     "autoSize": "fitCellContents",
     "minWidth": 80,
@@ -637,6 +636,125 @@
             }
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "headers": [
+      {
+        "headerName": "Параметри роботи",
+        "field": "workParameters",
+        "pinned": "left",
+        "minWidth": 180
+      },
+      {
+        "headerName": "08:00",
+        "field": "h8",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "10:00",
+        "field": "h10",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "12:00",
+        "field": "h12",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "14:00",
+        "field": "h14",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "16:00",
+        "field": "h16",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "18:00",
+        "field": "h18",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "20:00",
+        "field": "h20",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "22:00",
+        "field": "h22",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "00:00",
+        "field": "h0",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "02:00",
+        "field": "h2",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "04:00",
+        "field": "h4",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "06:00",
+        "field": "h6",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
       }
     ]
   }

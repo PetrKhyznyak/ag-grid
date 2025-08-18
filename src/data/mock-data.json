@@ -4,6 +4,91 @@
     "data": [
       {
         "fieldName": "Яблунівське",
+        "wellName": "Св-101",
+        "fund": 12,
+        "techModeAllowed": 250,
+        "techModeOptimal": 220,
+        "actualGasRate": 230
+      },
+      {
+        "fieldName": "Шебелинське",
+        "wellName": "Св-201",
+        "fund": 8,
+        "techModeAllowed": 150,
+        "techModeOptimal": 130,
+        "actualGasRate": 125
+      },
+      {
+        "fieldName": "Рибальське",
+        "wellName": "Св-501",
+        "fund": 5,
+        "techModeAllowed": 90,
+        "techModeOptimal": 70,
+        "actualGasRate": 65
+      },
+      {
+        "fieldName": "Опішнянське",
+        "wellName": "Св-302",
+        "fund": 6,
+        "techModeAllowed": 110,
+        "techModeOptimal": 90,
+        "actualGasRate": 85
+      },
+      {
+        "fieldName": "Опішнянське",
+        "wellName": "Св-303",
+        "fund": 8,
+        "techModeAllowed": 130,
+        "techModeOptimal": 110,
+        "actualGasRate": 105
+      },
+      {
+        "fieldName": "Котелевське",
+        "wellName": "Св-401",
+        "fund": 14,
+        "techModeAllowed": 300,
+        "techModeOptimal": 270,
+        "actualGasRate": 290
+      },
+      {
+        "fieldName": "Котелевське",
+        "wellName": "Св-402",
+        "fund": 12,
+        "techModeAllowed": 280,
+        "techModeOptimal": 250,
+        "actualGasRate": 260
+      },
+      {
+        "fieldName": "Котелевське",
+        "wellName": "Св-403",
+        "fund": 10,
+        "techModeAllowed": 260,
+        "techModeOptimal": 230,
+        "actualGasRate": 240
+      },
+      {
+        "fieldName": "Рибальське",
+        "wellName": "Св-502",
+        "fund": 6,
+        "techModeAllowed": 100,
+        "techModeOptimal": 80,
+        "actualGasRate": 75
+      },
+      {
+        "fieldName": "Рибальське",
+        "wellName": "Св-503",
+        "fund": 7,
+        "techModeAllowed": 110,
+        "techModeOptimal": 90,
+        "actualGasRate": 85
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "data": [
+      {
+        "fieldName": "Яблунівське",
         "wellName": "Св-200",
         "fund": 12,
         "h8": {
@@ -323,91 +408,6 @@
     ]
   },
   {
-    "id": 2,
-    "data": [
-      {
-        "fieldName": "Яблунівське",
-        "wellName": "Св-101",
-        "fund": 12,
-        "techModeAllowed": 250,
-        "techModeOptimal": 220,
-        "actualGasRate": 230
-      },
-      {
-        "fieldName": "Шебелинське",
-        "wellName": "Св-201",
-        "fund": 8,
-        "techModeAllowed": 150,
-        "techModeOptimal": 130,
-        "actualGasRate": 125
-      },
-      {
-        "fieldName": "Рибальське",
-        "wellName": "Св-501",
-        "fund": 5,
-        "techModeAllowed": 90,
-        "techModeOptimal": 70,
-        "actualGasRate": 65
-      },
-      {
-        "fieldName": "Опішнянське",
-        "wellName": "Св-302",
-        "fund": 6,
-        "techModeAllowed": 110,
-        "techModeOptimal": 90,
-        "actualGasRate": 85
-      },
-      {
-        "fieldName": "Опішнянське",
-        "wellName": "Св-303",
-        "fund": 8,
-        "techModeAllowed": 130,
-        "techModeOptimal": 110,
-        "actualGasRate": 105
-      },
-      {
-        "fieldName": "Котелевське",
-        "wellName": "Св-401",
-        "fund": 14,
-        "techModeAllowed": 300,
-        "techModeOptimal": 270,
-        "actualGasRate": 290
-      },
-      {
-        "fieldName": "Котелевське",
-        "wellName": "Св-402",
-        "fund": 12,
-        "techModeAllowed": 280,
-        "techModeOptimal": 250,
-        "actualGasRate": 260
-      },
-      {
-        "fieldName": "Котелевське",
-        "wellName": "Св-403",
-        "fund": 10,
-        "techModeAllowed": 260,
-        "techModeOptimal": 230,
-        "actualGasRate": 240
-      },
-      {
-        "fieldName": "Рибальське",
-        "wellName": "Св-502",
-        "fund": 6,
-        "techModeAllowed": 100,
-        "techModeOptimal": 80,
-        "actualGasRate": 75
-      },
-      {
-        "fieldName": "Рибальське",
-        "wellName": "Св-503",
-        "fund": 7,
-        "techModeAllowed": 110,
-        "techModeOptimal": 90,
-        "actualGasRate": 85
-      }
-    ]
-  },
-  {
     "id": 3,
     "data": [
       {
@@ -590,5 +590,326 @@
         "solidVaporAmount": 4
       }
     ]
+  },
+  {
+    "id": 6,
+    "data": [
+      {
+        "workParametersId": 1,
+        "workParameters": "P вх (I ст.), атм.",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "tвх (I ст.), C°",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "P вих (I ст.), атм.",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "tвих (I ст.), C°",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "Р вх (в теплообмінник), атм.",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "Р вх (до контуру теплообмінника), атм.",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "tвх (в теплообмінник), C°",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "tвх (до контуру теплообмінника), C°",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "Р вих (з теплообмінника), атм.",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "Р вих (з контуру теплообмінника), атм.",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "tвих (з теплообмінника), C°",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "tвих (з контуру теплообмінника), C°",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "Pвх (II ст.), атм.",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "tвх (II ст.), C°",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "Pкол, атм.",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "tкол, C°",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "Q (подача газу в ГТС/ трубопровід), тис.м³",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "Q (подача газу в ГРМ), тис.м³",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "Видобуток конденсату, т.",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "Видобуток нафти, т.",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      },
+      {
+        "workParametersId": 1,
+        "workParameters": "Видобуток пластової води, м³",
+        "h8": null,
+        "h10": null,
+        "h12": null,
+        "h14": null,
+        "h16": null,
+        "h18": null,
+        "h20": null,
+        "h22": null,
+        "h0": null,
+        "h2": null,
+        "h6": null
+      }
+    ]
   }
+
 ]

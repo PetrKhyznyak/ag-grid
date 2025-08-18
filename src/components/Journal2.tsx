@@ -6,7 +6,7 @@ import type {
 } from 'ag-grid-community';
 import {AgGridReact} from 'ag-grid-react';
 import dataList from "../data/mock-data.json";
-import headers from "../data/headers.json":
+import headers from "../data/headers.json";
 
 ModuleRegistry.registerModules([AllCommunityModule]);
 
@@ -26,8 +26,8 @@ type AutoSize =
 
 
 const Journal2: FC = () => {
-    const data = dataList.find(item => item.id === 5);
-    const header = headers.find(item => item.id === 5);
+    const data = dataList.find(item => item.id === 6);
+    const header = headers.find(item => item.id === 6);
     const [rowData, setRowData] = useState<RowData[]>(data?.data ?? []);
 
 
@@ -77,7 +77,7 @@ const Journal2: FC = () => {
                 columnDefs={columnDefs}
                 onCellValueChanged={handelCellValueChange}
                 onGridReady={(params: GridReadyEvent) => {
-                    params.api.autoSizeAllColumns()
+                    params.api.sizeColumnsToFit()
                 }}
                 defaultColDef={{
                     resizable: false,
@@ -86,6 +86,7 @@ const Journal2: FC = () => {
                     suppressSizeToFit: false,
 
                 }}
+
             />
         </div>
     )
