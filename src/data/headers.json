@@ -496,7 +496,8 @@
   {
     "id": 5,
     "autoSize": "fitCellContents",
-    "minWidth": 50,
+    "minWidth": 100,
+    "maxWidth": 150,
     "headers": [
       {
         "headerName": "Св-на",
@@ -507,7 +508,6 @@
       {
         "headerName": "Фонд",
         "field": "fund",
-        "pinned": "left",
         "editable": false
       },
       {
@@ -547,9 +547,10 @@
         }
       },
       {
-        "field": "waterSamplingLocations ",
+        "field": "waterSamplingLocations",
         "headerName": "Місця відбору проб супутньо-пластової води на іони заліза (Fe2+, Fe3+)",
         "editable": true,
+        "maxWidth": 200,
         "cellEditorParams": {
           "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
           "inputType": "number"

@@ -505,5 +505,90 @@
       }
     ]
 
+  },
+  {
+    "id": 5,
+    "data": [
+      {
+        "wellName": "Св-101",
+        "fund": "Діюча",
+        "gasFilterCoeff": 0.3,
+        "waterProduction": 20,
+        "gasVolumeFraction": 0.1,
+        "ironIonContent": 0.3,
+        "injectionMethod_solventType": "Some string",
+        "inhibitSolution": 20,
+        "corrosionInhibitorName": "Some name",
+        "corrosionInhibitorFlow": 3,
+        "liquidVaporName": "liquid name",
+        "liquidVaporAmount": 5,
+        "solidVaporName": "solid name",
+        "solidVaporAmount": 5
+      },
+      {
+        "wellName": "Св-112",
+        "fund": "Діюча",
+        "gasFilterCoeff": 0.3,
+        "waterProduction": 20,
+        "gasVolumeFraction": 0.1,
+        "ironIonContent": 0.3,
+        "injectionMethod_solventType": "Methanol",
+        "inhibitSolution": 20,
+        "corrosionInhibitorName": "KorShield-100",
+        "corrosionInhibitorFlow": 3,
+        "liquidVaporName": "Condensate",
+        "liquidVaporAmount": 5,
+        "solidVaporName": "Salt",
+        "solidVaporAmount": 5
+      },
+      {
+        "wellName": "Св-222",
+        "fund": "",
+        "gasFilterCoeff": 0.5,
+        "waterProduction": 25,
+        "gasVolumeFraction": 0.2,
+        "ironIonContent": 0.4,
+        "injectionMethod_solventType": "Ethanol",
+        "inhibitSolution": 18,
+        "corrosionInhibitorName": "CorroStop-A",
+        "corrosionInhibitorFlow": 4,
+        "liquidVaporName": "Oil Mist",
+        "liquidVaporAmount": 7,
+        "solidVaporName": "Sand",
+        "solidVaporAmount": 3
+      },
+      {
+        "wellName": "Св-110",
+        "fund": "Діюча",
+        "gasFilterCoeff": 0.25,
+        "waterProduction": 15,
+        "gasVolumeFraction": 0.05,
+        "ironIonContent": 0.2,
+        "injectionMethod_solventType": "Acetone",
+        "inhibitSolution": 22,
+        "corrosionInhibitorName": "Protect-X",
+        "corrosionInhibitorFlow": 2,
+        "liquidVaporName": "Water Steam",
+        "liquidVaporAmount": 10,
+        "solidVaporName": "Clay Dust",
+        "solidVaporAmount": 6
+      },
+      {
+        "wellName": "Св-104",
+        "fund": "",
+        "gasFilterCoeff": 0.4,
+        "waterProduction": 30,
+        "gasVolumeFraction": 0.15,
+        "ironIonContent": 0.5,
+        "injectionMethod_solventType": "Benzene",
+        "inhibitSolution": 25,
+        "corrosionInhibitorName": "AntiCor-77",
+        "corrosionInhibitorFlow": 5,
+        "liquidVaporName": "Hydrocarbon Vapor",
+        "liquidVaporAmount": 8,
+        "solidVaporName": "Iron Oxide",
+        "solidVaporAmount": 4
+      }
+    ]
   }
 ]

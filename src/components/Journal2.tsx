@@ -1,13 +1,12 @@
 import {type FC, type JSX, useState} from "react"
-import {AllCommunityModule, type CellValueChangedEvent, ModuleRegistry} from 'ag-grid-community';
+import {AllCommunityModule, type CellValueChangedEvent, type GridReadyEvent, ModuleRegistry} from 'ag-grid-community';
 import type {
     ColDef,
     ColGroupDef,
 } from 'ag-grid-community';
 import {AgGridReact} from 'ag-grid-react';
 import dataList from "../data/mock-data.json";
-import headers from "../data/headers.json"
-import {_logIfDebug} from "ag-grid-community/dist/types/src/utils/function";
+import headers from "../data/headers.json":
 
 ModuleRegistry.registerModules([AllCommunityModule]);
 
@@ -27,8 +26,8 @@ type AutoSize =
 
 
 const Journal2: FC = () => {
-    const data = dataList.find(item => item.id === 1);
-    const header = headers.find(item => item.id === 1);
+    const data = dataList.find(item => item.id === 5);
+    const header = headers.find(item => item.id === 5);
     const [rowData, setRowData] = useState<RowData[]>(data?.data ?? []);
 
 
@@ -72,21 +71,20 @@ const Journal2: FC = () => {
     console.log(columnDefs);
 
     return (
-        <div className="ag-theme-alpine" style={{height: '100%', width: "100%"}}>
+        <div className="ag-theme-alpine" style={{height: '100%', width: "100%", overflow: "visible"}}>
             <AgGridReact
                 rowData={rowData}
                 columnDefs={columnDefs}
                 onCellValueChanged={handelCellValueChange}
-                onGridReady={(params) => {
-                    params.api.sizeColumnsToFit();
-                }}
-                autoSizeStrategy={{
-                    type: "fitGridWidth",
+                onGridReady={(params: GridReadyEvent) => {
+                    params.api.autoSizeAllColumns()
                 }}
                 defaultColDef={{
                     resizable: false,
                     minWidth: header?.minWidth ? Number(header?.minWidth) : 50,
-                    maxWidth: header?.maxWidth
+                    maxWidth: header?.maxWidth ?? 200,
+                    suppressSizeToFit: false,
+
                 }}
             />
         </div>
