@@ -595,6 +595,40 @@
     "id": 6,
     "data": [
       {
+        "obj": "some obj",
+        "VALUE_OPER": {
+          "ukpgGasOutput": null,
+          "gasDayProductionVolume": null,
+          "gasDayUsedOwnNeedsVolume": null,
+          "condensateShipped": null,
+          "condensateProduced": null,
+          "waterProduced": null,
+          "waterShipped": null
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "data": [
+      {
+        "VALUE_OPER": {
+          "hydrFormatInhibitorUsage": null,
+          "hydrFormatInhibitorRest": null,
+          "odorantUsage": null,
+          "odorantRest": null,
+          "dieselUsage": null,
+          "dieselRest": null,
+          "solCorrosiontInhibitorUsage": null,
+          "solCorrosionInhibitorRest": null
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "data": [
+      {
         "workParametersId": 1,
         "workParameters": "P вх (I ст.), атм.",
         "h8": null,
@@ -909,6 +943,12 @@
         "h2": null,
         "h6": null
       }
+    ]
+  },
+  {
+    "id": 9,
+    "data": [
+
     ]
   }
 

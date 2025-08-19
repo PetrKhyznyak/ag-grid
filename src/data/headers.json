@@ -341,8 +341,20 @@
       {
         "headerName": "",
         "type": "spacer",
-        "maxWidth": 160,
-        "resizable": false
+        "width": 160,
+        "children":
+        [
+          {
+            "headerName": "",
+            "editable": false,
+            "resizable": false
+          },
+          {
+            "headerName": "",
+            "editable": false,
+            "resizable": false
+          }
+          ]
       }
     ]
   },
@@ -643,6 +655,151 @@
     "id": 6,
     "headers": [
       {
+        "headerName": "Вихід газу з УКПГ (флоутек) тис.м³/добу ",
+        "field": "VALUE_OPER.ukpgGasOutput",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\\\d+\\\\.?\\\\d*|\\\\.\\\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "Об'єм видобутого газу за добу, тис.м³ ",
+        "field": "VALUE_OPER.gasDayProductionVolume",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\\\d+\\\\.?\\\\d*|\\\\.\\\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "Об'єм витраченого газу на власні потреби, тис.м³ ",
+        "field": "VALUE_OPER.gasDayUsedOwnNeedsVolume",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\\\d+\\\\.?\\\\d*|\\\\.\\\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "Відвантажено конденсату, т. ",
+        "field": "VALUE_OPER.condensateShipped",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\\\d+\\\\.?\\\\d*|\\\\.\\\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "Добуто конденсату, т ",
+        "field": "VALUE_OPER.condensateProduced",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\\\d+\\\\.?\\\\d*|\\\\.\\\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "Добуто води, т. ",
+        "field": "VALUE_OPER.waterProduced",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\\\d+\\\\.?\\\\d*|\\\\.\\\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "Відвантажено води, м³ ",
+        "field": "VALUE_OPER.waterShipped",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\\\d+\\\\.?\\\\d*|\\\\.\\\\d+)$/",
+          "inputType": "number"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "headers": [
+      {
+        "headerName": "Витрата інгібітора гідратоутворення, м³",
+        "field": "VALUE_OPER.hydrFormatInhibitorUsage",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "Залишок інгібітора гідратоутворення, м³",
+        "field": "VALUE_OPER.hydrFormatInhibitorRest",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "Витрата одоранта, т",
+        "field": "VALUE_OPER.odorantUsage",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "Залишок одоранта, т",
+        "field": "VALUE_OPER.odorantRest",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "Витрати ДП, т.",
+        "field": "VALUE_OPER.dieselUsage",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "Залишок ДП, т.",
+        "field": "VALUE_OPER.dieselRest",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "Витрата  розчину інгібітору коррозії, т.",
+        "field": "VALUE_OPER.solCorrosiontInhibitorUsage",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      },
+      {
+        "headerName": "Залишок розчину інгібітору коррозії, т.",
+        "field": "VALUE_OPER.solCorrosiontInhibitorRest",
+        "editable": true,
+        "cellEditorParams": {
+          "pattern": "/^[+-]?(\\d+\\.?\\d*|\\.\\d+)$/",
+          "inputType": "number"
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "headers": [
+      {
         "headerName": "Параметри роботи",
         "field": "workParameters",
         "pinned": "left",
@@ -756,6 +913,12 @@
           "inputType": "number"
         }
       }
+    ]
+  },
+  {
+    "id": 9,
+    "headers": [
+
     ]
   }
 ]

@@ -26,22 +26,27 @@ type AutoSize =
 
 
 const Journal2: FC = () => {
-    const data = dataList.find(item => item.id === 6);
-    const header = headers.find(item => item.id === 6);
+    const data = dataList.find(item => item.id === 7);
+    const header = headers.find(item => item.id === 7);
     const [rowData, setRowData] = useState<RowData[]>(data?.data ?? []);
 
 
     let columnDefs = (header?.headers ?? []) as (ColDef<RowData> | ColGroupDef<RowData>)[];
 
-    // Добавляем spacer в рантайме
     columnDefs = columnDefs.map(col => {
         // Только для ColDef, у ColGroupDef нет 'field'
         if ((col as ColDef<RowData>).type === 'spacer') {
-            console.log(1)
             return {
                 ...col,
                 valueGetter: () => '',
             } as ColDef<RowData>;
+        }
+
+        if (header?.id === 7 && col.field === 'workParameters') {
+            return {
+                ...col,
+                tooltipValueGetter: (params: RowData) => params.value,
+            }
         }
         return col;
     });
@@ -71,20 +76,23 @@ const Journal2: FC = () => {
     console.log(columnDefs);
 
     return (
-        <div className="ag-theme-alpine" style={{height: '100%', width: "100%", overflow: "visible"}}>
+        <div className="ag-theme-alpine" style={{maxHeight: '600px', overflowY: 'scroll', width: "100%", overflow: "visible"}}>
             <AgGridReact
                 rowData={rowData}
                 columnDefs={columnDefs}
                 onCellValueChanged={handelCellValueChange}
+                domLayout="autoHeight"
                 onGridReady={(params: GridReadyEvent) => {
                     params.api.sizeColumnsToFit()
                 }}
                 defaultColDef={{
                     resizable: false,
+                    autoHeight: true,
                     minWidth: header?.minWidth ? Number(header?.minWidth) : 50,
                     maxWidth: header?.maxWidth ?? 200,
                     suppressSizeToFit: false,
-
+                    wrapHeaderText: true,
+                    autoHeaderHeight: true
                 }}
 
             />
